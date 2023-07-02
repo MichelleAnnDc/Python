@@ -16,6 +16,3 @@ def main():
             exit_input = input("Invalid input. Do you want to exit? (y/n): ").strip().lower()
             if exit_input == 'y':
                 break
-
-if __name__ == "__main__":
-    main()
