@@ -1,0 +1,42 @@
+#left triangle
+def print_left_triangle(symbol, size):
+    for i in range(1, size + 1):
+        print(symbol * i)
+
+#right triangle
+def print_right_triangle(symbol, size):
+    for i in range(1, size + 1):
+        spaces = size - i
+        print(" " * spaces + symbol * i)
+
+#diamond triangle
+def print_diamond(symbol, size):
+    # Upper half of the diamond
+    for i in range(1, size + 1):
+        spaces = size - i
+        print(" " * spaces + symbol * (2 * i - 1))
+
+    # Lower half of the diamond
+    for i in range(size - 1, 0, -1):
+        spaces = size - i
+        print(" " * spaces + symbol * (2 * i - 1))
+
+# Menu
+print("Pattern Generator")
+print("1. Left-Sided Triangle")
+print("2. Right-Sided Triangle")
+print("3. Diamond")
+choice = input("Enter your choice (1, 2, or 3): ")
+
+#input values
+symbol = input("Enter the symbol: ")
+size = int(input("Enter the size: "))
+
+if choice == "1":
+    print_left_triangle(symbol, size)
+elif choice == "2":
+    print_right_triangle(symbol, size)
+elif choice == "3":
+    print_diamond(symbol, size)
+else:
+    print("Invalid choice. Please enter 1, 2, or 3.") to select a pattern.
