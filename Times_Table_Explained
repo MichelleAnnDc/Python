@@ -1,0 +1,49 @@
+(1.)
+
+Q: What method did you use to make sure that the table starts with 2, increments in EVEN numbers, and the output is up to and including 20 times the user value?
+
+A: In the provided program, the range() function is used with the parameters (2, 21, 2).
+The range() function generates a sequence of numbers starting from the first parameter (in this case, 2), 
+incrementing by the step size specified by the third parameter (2), and stopping before the second parameter (21).
+
+Example:
+
+The even timetable for 4 is:
+ 2 times 4 is  8
+ 4 times 4 is 16
+ 6 times 4 is 24
+ 8 times 4 is 32
+10 times 4 is 40
+12 times 4 is 48
+14 times 4 is 56
+16 times 4 is 64
+18 times 4 is 72
+20 times 4 is 80
+
+If the range were (2, 20, 2) instead, it would stop before reaching 20 and would not include the even multiple of the user value equal to 20. 
+To include the multiple of 20, we need to set the upper limit of the range to be one higher than the desired value, 
+which is why 21 is used in the range.
+
+( 2.)
+
+Q: How did you make sure that the format for 'times' and 'is' are in the same column?
+
+A: The line - print(f"{i:2} times {number} is {result:2}") uses string formatting to ensure consistent column alignment for the output.
+{i:2} formats the value of i with a width of 2 characters. For example, if i = 2, it will be displayed as " 2", and if i = 10, it will be displayed as "10".
+By using the :2 formatting specifier, the program ensures that the "times" and "is" parts of the output are aligned vertically, 
+regardless of the length of the numbers involved in the multiplication.
+
+( 3.)
+
+Q: Explain why you used the input() function.
+
+A: user_input = int(input("Enter an integer value (or type 'exit' to quit): ")) is used to obtain user input from the console and convert it into an integer data type.
+
+The input() function is used to prompt the user for input. Whatever the user enters is returned as a string. However, since the program expects an integer value, 
+we need to convert the input string into an integer using the int() function.
+
+By calling int(input()), the input string provided by the user is converted to an integer. If the user enters a valid integer, it will be stored in the 
+user_input variable as an integer value. If the user enters something other than an integer, a ValueError will be raised, which can be caught and handled accordingly.
+
+In the context of the given program, the conversion to an integer is necessary because the program needs to perform arithmetic operations (multiplication) 
+with the user input. Converting the input to an integer ensures that the program can accurately calculate an even times table.
