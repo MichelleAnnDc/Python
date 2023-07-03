@@ -1,0 +1,7 @@
+color = input ("Enter a colour:")
+country = input ("Enter a country:")
+activity = input ("Enter an activity:")
+
+print ("Roses are " + color)
+print ("Benjamin lives in " + country)
+print ("Sometimes we like to go " + activity)
