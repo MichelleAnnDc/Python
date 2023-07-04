@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Assignment_Results>
+  <Assignment_1>
+   <Student_1>
+     <Student_ID>16430122-1521</Student_ID>
+      <Name>Pace, Camden G.</Name>
+      <Mathematics>
+       <Test1>54%</Test1>
+       <Test2>63%</Test2>
+      </Mathematics>
+      <English>
+       <Essay1>C+</Essay1>
+       <Essay2>B+</Essay2>
+      </English>
+      <IT>
+       <Activity1>Pass</Activity1>
+       <Test2>32%</Test2>
+       <Essay3>C+</Essay3>
+      </IT>
+    </Student_1>
+  </Assignment_1>
+</Assignment_Results>
